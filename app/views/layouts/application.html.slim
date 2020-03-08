@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Extreme</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+doctype html
+html
+  head
+    title Extreme
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true
+    = javascript_include_tag 'application', 'data-turbolinks-track'=> true
+    = csrf_meta_tags
+    = csp_meta_tag
+  body
+    .app-title.navbar.navbar-expand-md.navbar-light.bg-light
+      .navbar-brand Extreme
+    .container
+      = yield
