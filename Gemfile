@@ -58,8 +58,15 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slim-rails'
+gem 'bootstrap-sass'
+
+gem 'bootstrap', '~> 4.4.1'
+
 gem 'html2slim'
 
-gem 'bootstrap'
-
 gem 'devise'
+gem 'devise-bootstrap-views'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+
+gem 'jquery-rails'
